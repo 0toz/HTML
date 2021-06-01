@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var i  = 1;
+
+while(i< 11){
+	document.write(i+"&nbsp;&nbsp;");
+	
+	i++;
+}
+document.write("<br>");
+var i  = 1;
+while(i< 11){
+
+	if( i%2 == 0 ){
+		document.write(i+"&nbsp;&nbsp;");
+	}
+	i++;
+}
+document.write("<br>");
+
+var hap = 0;
+var i  = 1;
+while(i< 11){
+	if(i%2==0){
+		hap += i;
+	}
+	i++;
+}
+document.write(hap+"&nbsp;&nbsp; <br>");
+var i  = 1;
+while(i< 11){
+	document.write("5 * "+ i + " = " + i*5 + "<br>");
+	i++;
+}
+
+var i  = 1;
+
+while(i < 11){
+	var j  = 1;
+	while(j < 11){
+		document.write(i + " * "+ j + " = " + i*j + "&nbsp;&nbsp;");
+		j++;
+	}
+	document.write("<br>");
+	i++;
+}
+// 다 전역변수이므로 j가 11이상 올라갔으므로 초기화를 시켜주지않으면 와일문이 작동하지 않는다.
+
+
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

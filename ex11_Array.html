@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//자바 스크립트의 배열의 데이터 종류와 상관없이 데이터 묶음이다.
+// 배열의 크기가 동적으로 변경될수있다.
+
+var arr = ["사과","참외","귤", "수박"]
+document.write("<h3> 배열의 길이 : " + arr.length+ "</h3>");
+
+//데이터 추가. 배열이름에 인덱스.
+arr[4]= "호박";
+	document.write(arr +"<h3> 배열의 길이 : " + arr.length+ "</h3>");
+// 없는 인덱스에 넣으면 추가됨. 사이에 빈인덱스가 있다면 null로 저장됨.
+
+arr[8] = "용과";
+
+document.write(arr +"<h3> 배열의 길이 : " + arr.length+ "</h3>");
+//있는 배열에 넣으면 변경.
+
+
+// 데이터 추가 : 배열이름.push('데이터') //무조건 마지막 인덱스 뒤에 추가
+
+arr.push('31');
+
+document.write(arr +"<h3> 배열의 길이 : " + arr.length+ "</h3>");
+
+
+//데이터 제거 : 배열이름.pop() //마지막 요소제거. 배열이름.shift() => 맨처음 요소삭제.
+
+arr.pop();
+document.write(arr +"<h3> 배열의 길이 : " + arr.length+ "</h3>");
+
+arr.shift();
+document.write(arr +"<h3> 배열의 길이 : " + arr.length+ "</h3>");
+
+
+// splice(index,0, 데이터) : index위치에 데이터 삽입
+arr.splice(1,0,"바나나");
+document.write("<h3> 배열 내용 : " + arr + "</h3>");
+document.write("<h3> 배열 길이 : " + arr.length + "</h3>");
+//splice(index, 제거건수) :삭제
+
+arr.splice(3,1);
+document.write("<h3> 배열 내용 : " + arr + "</h3>");
+document.write("<h3> 배열 길이 : " + arr.length + "</h3>");
+
+
+
+
+arr.splice(1,3); //1번부터 3번까지.삭제.
+document.write("<h3> 배열 내용 : " + arr + "</h3>");
+document.write("<h3> 배열 길이 : " + arr.length + "</h3>");
+
+
+
+
+// 정렬 : sort() ==> 숫자, 대문자, 소문자 , 기타순
+arr.sort();
+document.write("<h3> 배열 내용 : " + arr + "</h3>");
+// 역정렬 : reverse();
+arr.reverse();
+document.write("<h3> 배열 내용 : " + arr + "</h3>");
+// 병합 : 배열1.concat(배열2); 배열1 뒤에 배열 2를 붙인다.
+var s1 = [1,2,3,4,5]
+var s2 = [2,4,6,8,10]
+var s3 = s1.concat(s2);
+document.write("<h3> 배열 내용 : " + s1 + "</h3>");
+document.write("<h3> 배열 내용 : " + s2 + "</h3>");
+document.write("<h3> 배열 내용 : " + s3 + "</h3>");
+</script>
+
+
+
+
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+function mOver(obj){
+obj.innerHTML = "<strong> Thank you < /strong>";
+}
+
+function mOut(obj){
+obj.innerHTML = "Mouse Over Me";
+}
+
+
+function mUp(obj){
+obj.style.backgroundColor= "skyblue";
+obj.style.color ="black";
+obj.innerHTML = "Mouse Click Me";
+}
+
+
+function test(){
+document.getElementById("box3").style.backgroundColor = "lightgray";
+document.getElementById("box3").style.color = "white"
+document.getElementById("box3").innerHTML = "<strong>Thanks </strong>"
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+
+
+
+
+
+<div id= "box1" onmouseOver="mOver(this)" onmouseOut="mout(this)"> Mouse Over Me</div>
+<div id= "box2" onmousedown="mDown(this)" onmouseup="mUp(this)"> Mouse Click Me</div>
+<div id= "box3" onclick="test()"> click me</div>
+<div id="box4" > Mouse Click ME</div>
+
+
+
+
+<script type="text/javascript">
+// onXXX 가 없으면 이벤트 리스터를 통해서 이벤트 처리 해야한다.
+	document.getElementById("box4").addEventListener("click",function(){
+		document.getElementById("box4").style.backgroundColor = "lightgray";
+		document.getElementById("box4").style.color = "white"
+		document.getElementById("box4").innerHTML = "<strong>Thanks </strong>"
+		
+	});
+</script>
+
+</body>
+</html>

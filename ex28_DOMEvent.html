@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOM Event</title>
+<script type="text/javascript">
+
+function test1(){
+	var str = document.getElementById("fname").value;
+	document.getElementById("fname").value=str.toUpperCase();
+}
+</script>
+
+
+</head>
+<body>
+
+
+
+<h2> id 선택자를 활용한 이벤트</h2>
+<p id ="p1" > </p>
+<p id = "p2">Hello world</p>
+<p id = "p3"> 대한민국 서울시 </p>
+
+onchange는 Enter를 입력해야 실행 input의 입력된 내용은 value;
+
+Enter your name : <input type="text" id= "fname" onchange ="test1()"><br>
+<hr>
+
+<button onclick="test2()"> 눌러주세요 2</button>
+<button onclick="test3()"> 눌러주세요 3</button>
+<button onclick="test4()"> 눌러주세요 4</button>
+
+
+
+
+</body>
+</html>

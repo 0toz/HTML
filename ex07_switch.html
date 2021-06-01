@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+/* 자바 switch 문과 같다.
+
+switch(key){
+	case value : 내용 ; break;
+	case value : 내용 ;  break;
+	
+} */
+
+
+//받은 변수 k 가 한국이면 서울, 일본이면 도쿄 , 중국이면 베이징, 미국이면 워싱턴
+// 나머지는 지구라고 출력하는 switch문을 작성하자.
+
+var str = prompt("나라를 입력하세요.");
+var res = "";
+
+switch(str){
+
+case "한국" : res = "서울" ; break;
+case "일본" : res = "도쿄"; break;
+case "중국" : res = "베이징"; break;
+case "미국" : res = "워싱턴"; break;
+default : res = "지구촌"
+
+}
+
+document.write("<h2>결과 : " + res + "</h2>")
+
+
+
+</script>
+
+
+
+
+
+
+</head>
+
+<body>
+
+</body>
+</html>

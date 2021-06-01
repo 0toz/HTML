@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//function은 반드시 호출해야만 실행한다.
+
+// 선언함수 (이름있음), 익명함수 (이름없음)
+
+// 1. 선언함수
+/* 
+function name([인자]) {
+	실행 내용들;
+	[return 데이터|변수;]
+}
+ */
+
+// 2. 익명함수
+/* var 변수 =  function([인자]){
+	 실행 내용들;
+	 [return 데이터|변수;]	 
+ }
+변수에 넣는 것은 리턴값이 있는것.
+
+ */
+
+/*  3. 함수 호출
+ 선언 함수는 먼저 해당페이지의 구조를 파악할 때 만들어진다. 나중에 호출하면 실행된다.
+ 익명함수는 실행될때 만들어진다.
+
+같은이름을 썼다면? 나중에 만들어진 게 먼저 실행됨.
+변수 초기화한것 마냥
+ */
+
+ test01();//선언전 호출이지만 실행됨. 웹페이지를 다읽고 나서 호출하기때문.
+ 
+ function test01(){
+	document.write("<h2>선언함수</h2>");
+	
+}
+
+
+test01();
+//msg(); 에러 없는 함수명입니다.
+
+var msg = function() {
+	document.write("<h2>익명함수</h2>")
+}
+msg();
+
+
+
+
+</script>
+
+
+
+
+
+
+</head>
+<body>
+
+</body>
+</html>

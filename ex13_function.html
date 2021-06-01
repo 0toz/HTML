@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+// 리턴이 없는 선언 함수.
+
+function add(a,b){
+	document.write("<h3> 결과 : " + (a+b) + "</h3>");
+	
+}
+//리턴이 있는 선언 함수.
+function sub(a,b){
+	return a-b;
+}
+//리턴이 없는 익명 함수.
+
+var msg01 = function(){
+	document.write("<h>리턴이 없는 익명함수</h>");
+}
+// 리턴이 있는 익명함수
+var msg02 = function(){
+	return "리턴함";
+}
+// 리턴이 있고 인자도 있는 익명함수.
+var msg03 = function(a,b){
+	var res = a+b;
+	return res;
+}
+// 리턴은 없고 인자는 있는 익명함수.
+var msg04 = function(a,b){
+	document.write("<h3>결과 : " + (a+b) + "</h3>");
+}
+
+// 도큐먼트 라이트가 없으면 표시될 방법이 없기때문에 리턴있는 함수는 도큐먼트 라이트 안에 써줘야함
+
+
+
+</script>
+
+
+</head>
+<body>
+
+
+
+
+<script type="text/javascript">
+
+add(12,4);
+
+var res = sub(12,4);
+
+document.write(res);
+
+msg01();
+document.write(msg02); // 이렇게하면 함수내용을 그대로 호출.
+
+document.write(msg02());// 이렇게해야 리턴값만 반환
+
+document.write(msg03(1,6));
+
+
+msg04(23,4);
+</script>
+
+
+
+</body>
+</html>

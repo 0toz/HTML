@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+
+
+// 숫자는 산술연상이 가능 , 문자형 숫자는 + 를 제외한 나머지 기능, + 는 문자 연결자로 사용된다.
+//문자열+숫자, 숫자 + 문자열, 문자열 + 문자열> >> 문자연결자 (연산 불가) 
+
+//숫자를 문자로 변경 toString();
+
+// 지정한 소숫점 이하 자릿수 반올림 : toFixed(지정자리) 0 ~100까지 음수 사용못함.
+
+
+//문자열 숫자를 숫자로 변경 (Number, parseInt, parseFloat);{
+/* 	NaN(Not a Number) : 숫자가 들어갈 자리에 다른 데이터가 들어오면 표시되는ㄴ 에러표시
+	isNaN9) NaN를 확인 Nan(이면 true NaN이 아니면 false)
+true == 1 하면 같다. true ===1 은 다르다.
+ */	
+
+ // parseInt (실수) => 정수만 처리.
+ document.write(Number(true)+ 10 + "<br>");
+	document.write(Number(10.4)+ 10 + "<br>"); //20.4
+	document.write(parseInt("10") + 10 + "<br>");
+	document.write(parseInt("10.6") + 10 + "<br>");//20
+	document.write(parseFloat("10") + 10 + "<br>");//20
+	document.write(parseFloat("10.6") + 10 + "<br>"); //20.6
+	
+// 첫글자가 숫자가 아닐때.
+
+	document.write(Number("A10")+ 10 + "<br>");// 다 계산안됨.
+	document.write(parseInt("A10") + 10 + "<br>"); //NaN 다 계산안됨.
+	document.write(parseFloat("10") + 10 + "<br>");//NaN
+	
+	//중간에 문자형 숫자가 아닐때  (Number와 parseXX 의 차이점.)
+	// Number는 전체가 문자형 숫자가 아니면 NaN(문자형 숫자까지는 인정)
+	//parseXXX는 문자 전에 나온 문자형 숫자는 인정.
+	
+	document.write(Number("100A10")+10 + "<br>"); //NaN
+	document.write(parseInt("100A10") + 10 + "<br>"); //110
+	document.write(parseFloat("100A10") + 10 + "<br>");//110
+	
+	//처음 만난 숫자만 계산하는듯.
+	document.write(Number("  1 1   ")+10 + "<br>"); //NaN
+	document.write(parseInt("  2 1   ") + 10 + "<br>"); //11
+	document.write(parseFloat("   1 1   ") + 10 + "<br>");//11
+	
+	
+	document.write(Number("  10   ")+10 + "<br>"); //20
+	document.write(parseInt("  10   ") + 10 + "<br>"); //20
+	document.write(parseFloat("   10   ") + 10 + "<br>");//20
+	
+	
+	
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

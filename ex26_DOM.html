@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOM : 요소 변경</title>
+</head>
+<body>
+	html 요소 변경
+	element.innerHTML : 내용 변경.
+	element.attribute : 속성 변경.
+	element.style.property : CSS속성 스타일 변경.
+
+<p align="center"> Hello World</p>
+<p id = "p1"> Hello world </p>
+<p> <span> hello world	</span> </p>
+<p id = "res1"> 서울시 마포구 서교동 </p>
+<p id = "res2"> </p>
+<img id="img1" alt= "" src= "images/pic_bulbon.gif">
+
+<script type="text/javascript">
+
+document.getElementById("res1").innerHTML = "KOREA seoul";
+document.getElementById("res2").innerHTML = "<h2>KOREA seoul</h2>";
+
+document.getElementByid("p1").align = "center";
+document.getElementByid("img1").src = "images/pic_bulboff.gif";
+</script>
+
+
+</body>
+</html>

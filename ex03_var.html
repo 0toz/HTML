@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>변수 : var</title>
+</head>
+<body>
+<script type="text/javascript">
+
+//변수 선언 : 자바스크립트 에서는 변수 선언을 할 때 자료형을 지정하지 않는다.
+// 주의 1. 숫자로 시작하면 안됨.
+// 		2. 대소문자를 구별한다. (name,Name, NAME 다 다름.)
+//  	3. 무엇이든 저장가능.(데이터, 함수(function), 클래스, 객체,);
+
+// 형식) var 변수명;
+//		 변수명 = 정수, 실수, boolean, char, String, null, function, class, Object 다저장가능.
+// 주의) 하나의 변수로 여러가지 정보를 저장할 수 있다.
+
+var res = 10;
+document.write("<p>res="+res+"</p>");
+
+res = 3.14;
+document.write("<p>res="+res+"</p>");
+
+res = true;
+// 오타로 인해 오류가 났더니 그다음 줄부터는 출력되지 않았다.
+document.write("<p>res="+res+"</p>");
+
+
+res = 'a';
+
+document.write("<p>res="+res+"</p>");
+
+res = null;
+
+document.write("<p>res="+res+"</p>");
+
+res = 'seoul'
+	document.write("<p>res="+res+"</p>");
+
+// 선언하지 않아도 사용가능(추천하지않음.)
+res2 = "hello javaScript"
+
+	document.write("<p>res2="+res2+"</p>");
+
+//선언 후 데이터를 저장하지 않고 출력을 요청하면 undefined라고 출력된다.
+
+var res3;
+
+document.write("<p>res3="+res3+"</p>");
+
+</script>
+
+</body>
+</html>

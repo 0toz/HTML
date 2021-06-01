@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+	//받은 점수 k1 이 90 이상이 면 합격 아니면 불합격
+	var k1 = prompt("점수를 입력하세요");
+
+	if (k1 >= 90) {
+		document.write("합격")
+	} else {
+		document.write("불합격")
+	};
+	document.write("<br>")
+	// 근무시간 8시까지는 8720원
+	//이후 1.5배
+	var h = prompt("일한 시간입력");
+	if (h <= 8) {
+		document.write(h * 8720)
+	} else {
+		document.write(8 * 8720 + (h - 8) * 1.5 + "원<br>")
+	};
+	
+
+	//받은 점수 k2가 90 이상이면 A학점 , 80이상이면 B학점 , 70 이상이면 C학점 나멈지는 F학점
+	var k2 = prompt("받은 점수")
+	if (k2 >= 90) {
+		document.write("A학점")
+	} else if (k2 >= 80) {
+		document.write("B학점")
+
+	} else if (k2 >= 70) {
+		document.write("C학점")
+	} else {
+		document.write("F학점")
+	}
+</script>
+<body>
+
+</body>
+</html>
